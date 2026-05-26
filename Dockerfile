@@ -31,4 +31,5 @@ COPY . /app/
 EXPOSE 8000
 
 # CHANGE CETTE LIGNE pour garder le conteneur actif
-CMD ["sleep", "infinity"]
+#CMD ["sleep", "infinity"]
+CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000"]

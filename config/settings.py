@@ -157,6 +157,7 @@ CORS_ALLOWED_ORIGINS_DEFAULT = [
     "http://localhost:3000",
     "http://localhost:5173",
     "http://localhost:8080",
+    "https://dmt-sigma.vercel.app",
 ]
 
 CORS_ALLOWED_ORIGINS_ENV = os.environ.get('CORS_ALLOWED_ORIGINS', '')
